@@ -53,6 +53,19 @@
           }
         }
       }
+    },
+    "/weather": {
+      "get": {
+        "tags": [
+          "Weather"
+        ],
+        "description": "Returns weather data for the biggest cities in Brazil",
+        "responses": {
+          "200": {
+            "description": "List of forecasted weather data"
+          }
+        }
+      }
     }
   },
   "components": {},
@@ -64,6 +77,10 @@
     {
       "name": "Users",
       "description": "User management and login"
+    },
+    {
+      "name": "Weather",
+      "description": "Weather API routes"
     }
   ]
 }
